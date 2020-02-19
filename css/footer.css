@@ -1,0 +1,187 @@
+footer {
+    background-color: #D34444;
+    display: flex;
+    max-width: 100vw;
+}
+
+footer a {
+    text-decoration: none;
+    color:black;
+}
+
+footer a:hover {
+    opacity: 0.6;
+}
+
+footer ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+footer li {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+footer h4{
+margin-top: 1em;
+align-items: center;
+justify-content: center;
+font-family: 'Open Sans', sans-serif !important;
+font-weight: 600;
+font-size: 20px;
+}
+
+footer img {
+    width: 30px;
+      height: 30px;
+      margin: 20px;
+}
+  
+  footer img:hover{
+    opacity: 0.7;
+}
+
+.right_footer {
+    font-family: 'Open Sans', sans-serif !important;
+font-weight: 600;
+}
+
+
+/*.right_footer {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "one two"
+                        "three four";
+}
+
+.row_icons {
+    grid-area: two;  
+    margin-right: 0;  
+}
+
+.email {
+    grid-area: three;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600;
+}
+
+.github {
+    grid-area: four;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600;
+}
+
+*/
+
+
+.email, .github {
+    background-color: #937185;
+    color: white;
+}
+@media only screen and (min-width: 300px) {
+
+    footer{
+        height: auto;
+        display: grid;
+        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr ;
+        grid-template-areas: "one"
+                            "two";
+    }
+    
+    .left_footer {
+       align-items: center;
+        grid-area: one;
+        margin-left: 0 auto;
+        text-align: center;
+    }
+
+    .left_footer a {
+        color: #E7E2E8;
+    }
+
+    .right_footer {
+        text-align: center;
+        align-items: center;
+        grid-area: two;
+        margin-left: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .email{
+        margin-bottom: 1rem;  
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    footer{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: "a  b";
+    }
+
+
+    .left_footer {
+        grid-area: a;
+    }
+    
+    .right_footer {
+        grid-area: b;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "one two"
+                            "three four";
+        text-align: left;
+        margin-right: 40px;
+    }
+    
+    .row_icons {
+        grid-area: two;  
+        margin-right: 0;  
+    }
+    
+    .email {
+        grid-area: three;
+        font-family: 'Open Sans', sans-serif !important;
+        font-weight: 600;
+    }
+    
+    .github {
+        grid-area: four;
+        font-family: 'Open Sans', sans-serif !important;
+        font-weight: 600;
+    }
+
+    .email, .github {
+        align-self: baseline;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    footer {
+        padding: 0 10%;
+    }
+
+    .left_footer, .right_footer {
+        font-size: 12px;
+    }
+
+    .left_footer {
+        text-align: left;
+        align-items: flex-start;
+        margin: 0;
+        
+    }
+
+
+
+
+
+}

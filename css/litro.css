@@ -1,0 +1,230 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    src: url(../fonts/Montserrat-ExtraBold.ttf);
+    font-family: montserrat;    
+}
+
+@font-face{
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-family: montserrat-regular;    
+}
+
+@font-face{
+  src: url(../fonts/clarendon-lt-std-roman.otf);
+  font-family: Clarendon;
+}
+
+a {
+    text-decoration: none;
+    color: #308DFC
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.content_litro {
+    width: 70vw;
+    max-width: 1300px;    
+}
+
+.capa_litro {
+    display: block;
+    width: 70vw;
+    max-width: 1300px;
+    margin: 0 auto;
+    
+}
+
+.titulo_projeto{
+    font-family: montserrat;
+    font-size: 2.2rem;
+    color: #2a6bda !important;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.descricao_litro h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    color:black;
+    margin-bottom: 1em;
+}
+
+.ferramentas {
+    font-size: 14px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #757575;
+    word-spacing: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.titulo_ferramentas {
+    margin-bottom: 5px !important;
+    font-size: 17px !important;
+}
+
+.descricao_litro p, .inter_text {
+    font-family: 'Didact Gothic', sans-serif;
+    color: black;
+    font-size: 26px;
+}
+
+.descricao_litro .texto_principal, .inter_text {
+    margin: 20px 0;
+    
+}
+
+.photos_litro {
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 100px;
+}
+
+.img_body {
+    max-width: 100%;
+    max-height: auto;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 10px solid;
+    border-radius: 8px;
+    border-color: white;
+}
+
+.inter_text {
+    margin-bottom: 40px;
+}
+
+.cta_litro, .cta_litro_fs, .cta_litro_sc{
+    margin: 20px 0;
+    padding: 14px 33px;
+    border: 4px solid;
+    border-color: #308DFC;
+    background-color: #F2F2F2;
+    color:black;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cta_litro:hover {
+    background-color:#308DFC;
+}
+
+.cta_litro a:hover {
+    color:white;
+}
+
+@media only screen and (min-width: 300px) {
+
+    .content_litro {
+        width: 100vw;
+    }
+
+    .capa_litro {
+        display: block;
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .descricao_litro {
+        margin: 0 1.2rem;
+    }
+
+    .titulo_projeto {
+        font-size: 1.6rem;
+    }
+
+    .descricao_litro h4 {
+        font-size: 1.2rem;
+    }
+
+    .texto_principal {
+        font-size: 1.4rem !important;
+    }
+
+    .photos_litro {
+        display: grid;
+        width: 80vw;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+    }
+
+    .inter_text {
+        
+        font-size: 1.4rem;
+        margin:  20px 1.2rem;
+    }
+
+    .cta_litro_sc {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .img_body {
+        margin-bottom: 0;
+    }
+
+    .cta_litro_fs {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .descricao_litro {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .inter_text {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    
+    .photos_litro {
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-gap: 100px;
+    }
+
+
+    .cta_litro_s {
+        display: none;
+    }
+
+    .cta_litro_fs {
+        display: flex;
+    }
+
+    .titulo_projeto {
+        font-size: 2rem;
+    }
+
+}

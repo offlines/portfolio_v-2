@@ -1,0 +1,208 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.content {
+    max-width: 1300px;
+    
+}
+
+body {
+    background-color: #f2f2f2 !important;
+}
+
+
+main .capa {
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: auto;
+
+}
+
+.titulo_projeto{
+    font-family: montserrat;
+    font-size: 2.5rem;
+    color: #2a6bda !important;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.descricao h4, .ferramentas {
+    font-size: 16px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #757575;
+    word-spacing: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.descricao p, .inter_text {
+    font-family: 'Didact Gothic', sans-serif;
+    color: black;
+    font-size: 26px;
+}
+
+.descricao .texto_principal, .inter_text {
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+
+.adesivo1 {
+    background-image: url('../images/adesivo_alice.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.adesivo1:hover {
+    background-image: url('../images/adesivo_alice_c.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    transition: 0.6s ease;
+}
+
+.adesivo2 {
+    background-image: url('../images/adesivo_borb.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.adesivo2:hover {
+    background-image: url('../images/adesivo_borb_c.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    transition: 0.6s ease;
+}
+.adesivo3 {
+    background-image: url('../images/adesivos_uni.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.adesivo3:hover {
+    background-image: url('../images/adesivos_uni_c.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    transition: 0.6s ease;
+}
+.adesivo4 {
+    background-image: url('../images/adesivos_buda.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.adesivo4:hover {
+    background-image: url('../images/adesivos_buda_c.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    transition: 0.6s ease;
+}
+
+.galeria {
+    padding-bottom: 70px;
+    max-width: 1200px;
+}
+
+
+
+@media only screen and (min-width: 300px) {
+
+    
+    .titulo_projeto {
+        font-size: 1.6rem;
+    }
+
+    .descricao_litro h4 {
+        font-size: 1.2rem;
+    }
+
+    .texto_principal {
+        font-size: 1.4rem !important;
+    }
+
+    .galeria {
+        width: 100vw;
+        
+    }
+
+    .photos {
+        display: none;
+    }
+
+    .photos__sm {
+    width: 100vw;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 40% ;
+    grid-gap: 10px;
+
+    }
+
+    .adesivo1_sm {
+        background-image: url('../images/adesivo_alice_c.png');
+        background-size: cover;
+        width: 10rem;
+        height: 10rem;       
+    }
+    
+    .adesivo2_sm {
+        background-image: url('../images/adesivo_borb_c.png');
+        background-size: cover;
+        width: 10rem;
+        height: 10rem;         
+    }
+      
+    .adesivo3_sm {
+        background-image: url('../images/adesivos_uni_c.png');
+        background-size: cover;
+        width: 10rem;
+        height: 10rem;    
+    }
+       
+    .adesivo4_sm {
+        background-image: url('../images/adesivos_buda_c.png');
+        background-size: cover;
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+    @media only screen and (min-width: 1024px) {
+
+        .photos__sm {
+            display: none;
+        }
+
+        .photos {            
+                justify-items: center;
+                align-items: center;
+                justify-content: center;
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20%;
+                grid-gap: 50px;
+            }
+
+            .titulo_projeto {
+                font-size: 2rem;
+            }
+    
+}
+
+

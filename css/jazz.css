@@ -1,0 +1,159 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    src: url(../fonts/Montserrat-ExtraBold.ttf);
+    font-family: montserrat;
+    
+}
+
+@font-face{
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-family: montserrat-regular;
+    
+}
+
+@font-face{
+  src: url(../fonts/clarendon-lt-std-roman.otf);
+  font-family: Clarendon;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.glider-contain {
+    scrollbar-width: none;
+    width: 60vw;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    display: grid;
+    width: 80vw;
+}
+
+
+.titulo_projeto{
+    font-family: montserrat;
+    font-size: 2.2rem;
+    color: #2a6bda !important;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.descricao_projeto p, .inter_text {
+    font-family: 'Didact Gothic', sans-serif;
+    color:#757575;
+    font-size: 26px;
+}
+
+.descricao_projeto {
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: auto;
+    grid-gap: 15%;
+    max-height: auto;
+}
+
+.descricao_projeto h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    color:black;
+    margin-bottom: 1em;
+
+}
+
+.titulo_ferramentas {
+    margin-bottom: 5px !important;
+    font-size: 17px !important;
+}
+
+.img_body img{
+    max-width: auto;
+    max-height: 400px;    
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+.ferramentas {
+    font-size: 14px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #757575;
+    word-spacing: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 300px) {
+
+    .glider-contain {
+        width: 100vw;
+    }
+
+    .glider-prev, .glider-next {
+        display: none;
+    }
+
+    main {
+        margin-bottom: 30px;
+    }
+
+    .descricao_projeto {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+        width: 80vw;
+        margin: 0;
+        grid-gap: 1rem;
+    }
+
+    .titulo_projeto {
+        font-size: 1.4rem;
+    }
+
+    .escrito h4 {
+        font-size: 1.05rem;
+    }
+
+    .escrito p {
+        font-size: 1.5em;
+    }
+    
+    .ferramentas {
+        font-size: 1.4rem;
+    }
+
+    .img_body img {
+        height: 20vh;
+    }
+
+}
+@media only screen and (min-width: 1024px) {
+
+.glider-contain {
+    width: 80vw;
+}
+
+.glider-prev, .glider-next {
+    display: flex;
+}
+
+.titulo_projeto {
+    font-size: 2rem;
+}
+
+}
